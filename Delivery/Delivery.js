@@ -11,16 +11,17 @@ function forcaSenha(senha) {
 
     let tipos = 0;
     if (/[a-z]/.test(senha))
-        tipo++;
+        tipos++;
     if (/[A-Z]/.test(senha))
-        tipo++;
+        tipos++;
     if (/[0-9]/.test(senha))
-        tipo++;
+        tipos++;
     if (/[^a-zA-Z0-9]/.test(senha))
-        tipo++;
+        tipos++;
 
     if (tipos <= 2)
         return 'media';
+
     return 'forte';
 }
 
