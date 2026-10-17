@@ -32,6 +32,7 @@ function podeLogar(usuario) {
     return usuario.status === 'ativo' && usuario.falhas < 3;
 }
 
+// implementa CalcularFrete (CT-13 a CT-16)
 function calcularFrete(distanciaKm) {
     if (distanciaKm <= 0) 
         throw new Error('Distância inválida');
