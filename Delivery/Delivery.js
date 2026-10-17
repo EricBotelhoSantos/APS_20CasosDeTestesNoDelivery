@@ -1,3 +1,4 @@
+// implementa autencar (CT-01 a CT-04)
 function autenticar (usuarios, email, senha) {
     const usuario = usuarios.find(u => u.email === email);
     if (!usuario) 
