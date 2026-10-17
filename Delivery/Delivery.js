@@ -6,6 +6,7 @@ function autenticar (usuarios, email, senha) {
     return usuario.senha === senha && usuario.ativo === true;
 }
 
+// implementa forcaSenha (CT-05 a CT-08)
 function forcaSenha(senha) {
     if (!senha || senha.length < 8)
         return 'fraca';
