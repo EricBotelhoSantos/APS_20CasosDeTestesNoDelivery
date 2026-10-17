@@ -43,6 +43,7 @@ function calcularFrete(distanciaKm) {
     return 5 + (kmExcedente * 1.50);
 }
 
+// implementa aplicarCupom (CT-17 a CT-20)
 function aplicarCupom(valor, cupom) {
     let valorFinal = valor;
 
