@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">57.14% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>20/35</span>
+                <span class='fraction'>35/35</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">54.54% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>18/33</span>
+                <span class='fraction'>33/33</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>3/6</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">55.88% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>19/34</span>
+                <span class='fraction'>34/34</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -148,33 +148,33 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">function autenticar (usuarios, email, senha) {
@@ -204,34 +204,34 @@ function forcaSenha(senha) {
     return 'forte';
 }
 &nbsp;
-function <span class="fstat-no" title="function not covered" >podeLogar(</span>usuario) {
-<span class="cstat-no" title="statement not covered" >    return usuario.status === 'ativo' &amp;&amp; usuario.falhas &lt; 3;</span>
+function podeLogar(usuario) {
+    return usuario.status === 'ativo' &amp;&amp; usuario.falhas &lt; 3;
 }
 &nbsp;
-function <span class="fstat-no" title="function not covered" >calcularFrete(</span>distanciaKm) {
-<span class="cstat-no" title="statement not covered" >    if (distanciaKm &lt;= 0) </span>
-<span class="cstat-no" title="statement not covered" >        throw new Error('Distancia inválida');</span>
-<span class="cstat-no" title="statement not covered" >    if (distanciaKm &lt;= 3)</span>
-<span class="cstat-no" title="statement not covered" >        return 5;</span>
+function calcularFrete(distanciaKm) {
+    if (distanciaKm &lt;= 0) 
+        throw new Error('Distância inválida');
+    if (distanciaKm &lt;= 3)
+        return 5;
 &nbsp;
-    const kmExcedente = <span class="cstat-no" title="statement not covered" >distanciaKm - 3;</span>
-<span class="cstat-no" title="statement not covered" >    return 5 + (kmExcedente * 1.50);</span>
+    const kmExcedente = distanciaKm - 3;
+    return 5 + (kmExcedente * 1.50);
 }
 &nbsp;
-function <span class="fstat-no" title="function not covered" >aplicarCupom(</span>valor, cupom) {
-    let valorFinal = <span class="cstat-no" title="statement not covered" >valor;</span>
+function aplicarCupom(valor, cupom) {
+    let valorFinal = valor;
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (cupom === 'PRIMEIRA10') {</span>
-<span class="cstat-no" title="statement not covered" >        valorFinal = valor * 0.90;</span>
+    if (cupom === 'PRIMEIRA10') {
+        valorFinal = valor * 0.90;
     }
-    else <span class="cstat-no" title="statement not covered" >if (cupom === 'VIP20') {</span>
-<span class="cstat-no" title="statement not covered" >        valorFinal = valor * 0.80;</span>
+    else if (cupom === 'VIP20') {
+        valorFinal = valor * 0.80;
     }
-    else <span class="cstat-no" title="statement not covered" >if (cupom !== null &amp;&amp; cupom !== undefined &amp;&amp; cupom !== '') {</span>
-<span class="cstat-no" title="statement not covered" >        throw new Error('Cupom inválido');</span>
+    else if (cupom !== null &amp;&amp; cupom !== undefined &amp;&amp; cupom !== '') {
+        throw new Error('Cupom inválido');
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    return Number(valorFinal.toFixed(2));</span>
+    return Number(valorFinal.toFixed(2));
 }
 &nbsp;
 module.exports = {autenticar, forcaSenha, podeLogar, calcularFrete, aplicarCupom};</pre></td></tr></table></pre>
@@ -241,7 +241,7 @@ module.exports = {autenticar, forcaSenha, podeLogar, calcularFrete, aplicarCupom
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2026-10-16T02:09:02.790Z
+                at 2026-10-17T22:19:52.656Z
             </div>
         <script src="prettify.js"></script>
         <script>

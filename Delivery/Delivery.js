@@ -31,7 +31,7 @@ function podeLogar(usuario) {
 
 function calcularFrete(distanciaKm) {
     if (distanciaKm <= 0) 
-        throw new Error('Distancia inválida');
+        throw new Error('Distância inválida');
     if (distanciaKm <= 3)
         return 5;
 

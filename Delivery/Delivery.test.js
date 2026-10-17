@@ -40,3 +40,57 @@ describe('F2 - forcaSenha', () => {
         expect(forcaSenha('Abcdef1!')).toBe('forte');
     })
 })
+
+describe('F3 - podeLogar', () => {
+    test('CT-09: Ativo sem falhas', () => {
+        expect(podeLogar({status: 'ativo', falhas: 0})).toBe(true);
+    })
+
+    test('CT-10: Ativo com 2 falhas (limite)', () => {
+        expect(podeLogar({status: 'ativo', falhas: 2})).toBe(true);
+    })
+
+    test('CT-11: Ativo com 3 falhas', () => {
+        expect(podeLogar({status: 'ativo', falhas: 3})).toBe(false);
+    })
+
+    test('CT-12: Status Bloqueado', () => {
+        expect(podeLogar({status: 'bloqueado', falhas: 0})).toBe(false);
+    })
+})
+
+describe('F4 - calcularFrete', () => {
+    test('CT-13: Distancia curta', () => {
+        expect(calcularFrete(2)).toBe(5);
+    })
+
+    test('CT-14: Fronteira de 3 km', () => {
+        expect(calcularFrete(3)).toBe(5);
+    })
+
+    test('CT-15: Acima da Fronteira', () => {
+        expect(calcularFrete(5)).toBe(8);
+    })
+
+    test('CT-16: Distância negativa', () => {
+        expect(() => calcularFrete(-2)).toThrow('Distância inválida');
+    })
+})
+
+describe('F5 - aplicarCupom', () => {
+    test('CT-17: Sem cupom', () => {
+        expect(aplicarCupom(80, null)).toBe(80);
+    })
+
+    test('CT-18: Cupom de 10%', () => {
+        expect(aplicarCupom(100, 'PRIMEIRA10')).toBe(90);
+    })
+
+    test('CT-19: Cupom de 20%', () => {
+        expect(aplicarCupom(50, 'VIP20')).toBe(40);
+    })
+
+    test('CT-20: Cupom desconhecido', () => {
+        expect(() => aplicarCupom(80, 'CUPOM123')).toThrow('Cupom inválido');
+    })
+})
