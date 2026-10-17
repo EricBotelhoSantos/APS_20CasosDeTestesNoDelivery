@@ -27,6 +27,7 @@ function forcaSenha(senha) {
     return 'forte';
 }
 
+// implementa podeLogar (CT-09 a CT-12)
 function podeLogar(usuario) {
     return usuario.status === 'ativo' && usuario.falhas < 3;
 }
